@@ -119,7 +119,6 @@ body {
     align-items: center;
     justify-content: space-between;
     gap: 20px; /* Add some space between image and text */
-    border: solid 2px black;
     place-content: center;
 }
 
