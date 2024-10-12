@@ -20,7 +20,14 @@ body {
     padding: 20px 50px;
     background-color: #fff;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    right: 0;
+    z-index: 1000; 
+
 }
+
 
 .logo {
     font-size: 24px;
@@ -45,12 +52,12 @@ body {
     color: #00aaff;
 }
 
-.signup-btn {
+#signup-btn {
     padding: 10px 20px;
     background-color: #00aaff;
-    color: white;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
+    color:white
+    /*transition: background-color 0.3s ease;*/
 }
 
 .signup-btn:hover {
@@ -66,7 +73,7 @@ body {
     align-items: center;
     color: white;
     text-align: center;
-    padding: 0 20px;
+    padding: 80px
 }
 
 .home-content h2 {
@@ -96,13 +103,14 @@ body {
 
 .about {
     background-color: #fff;
-    padding: 50px 0;
+    padding:120px;
 }
 
 .about-container {
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width:90%;
+    margin: 0 auto auto;
     padding: 0 20px;
+
 }
 
 .about-content {
@@ -111,6 +119,8 @@ body {
     align-items: center;
     justify-content: space-between;
     gap: 20px; /* Add some space between image and text */
+    border: solid 2px black;
+    place-content: center;
 }
 
 .about-left {
@@ -119,7 +129,7 @@ body {
 }
 
 .about-left img {
-    max-width: 100%;
+    min-width: 75%;
     border-radius: 10px;
 }
 
@@ -210,6 +220,7 @@ body {
     justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
+    padding-top:120px;
 }
 
 .course-card {
