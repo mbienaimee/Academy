@@ -67,7 +67,7 @@ body {
 /* Home Section with Background Image */
 .home {
     height: 80vh;
-    background: url('') no-repeat center center/cover;
+    background: url('your-home-background-image.jpg') no-repeat center center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
