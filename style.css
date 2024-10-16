@@ -25,7 +25,6 @@ body {
     left: 0;
     right: 0;
     z-index: 1000; 
-
 }
 
 
@@ -67,13 +66,28 @@ body {
 /* Home Section with Background Image */
 .home {
     height: 80vh;
-    background: url('your-home-background-image.jpg') no-repeat center center/cover;
+    background: url('/images/imagebg.png') no-repeat center center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     text-align: center;
     padding: 80px
+}
+.home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 123, 200, 0.2); /* Less blue and lighter */
+    z-index: 1;
+}
+.home-content {
+    position: relative;
+    z-index: 2;
+    max-width: 600px; /* Set a max-width for better layout */
 }
 
 .home-content h2 {
