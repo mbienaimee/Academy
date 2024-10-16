@@ -55,7 +55,7 @@ body {
 #signup-btn {
     padding: 10px 20px;
     background-color: #00aaff;
-    border-radius: 5px;
+    border-radius: 20px;
     color:white
     /*transition: background-color 0.3s ease;*/
 }
@@ -113,7 +113,7 @@ body {
     background-color: #00aaff;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     font-size: 16px;
     text-decoration: none;
     transition: background-color 0.3s ease;
@@ -151,7 +151,7 @@ body {
 
 .about-left img {
     min-width: 75%;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .about-right {
@@ -176,7 +176,7 @@ body {
     padding: 10px 20px;
     background-color: #00aaff;
     color: white;
-    border-radius: 5px;
+    border-radius: 20px;
     text-decoration: none;
     transition: background-color 0.3s ease;
 }
@@ -291,7 +291,7 @@ body {
     background-color: #00aaff;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin-top: auto; /* Push the button to the bottom */
@@ -323,40 +323,15 @@ body {
     background-color: #007acc;
 }
 
-.contact-us {
-    padding: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f9f9f9;
-    min-height: 100vh;
-}
 
-.contact-container {
-    width: 100%;
-    max-width: 600px;
-    background-color: white;
-    padding: 40px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-}
 
-.contact-container h2 {
-    text-align: center;
-    font-size: 28px;
-    margin-bottom: 30px;
-}
 
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
 
-.form-row {
-    display: flex;
-    justify-content: space-between;
-}
+
+
+
+
+
 .join-community-section {
     text-align: center;
     padding: 40px 0;
@@ -364,7 +339,7 @@ body {
 
 h1 {
     font-size: 24px;
-    color: #007bff;
+    color:#0099ff;
     margin-bottom: 20px;
 }
 
@@ -401,32 +376,56 @@ h1 {
 
 }
 .join-button a:hover{
-    background-color: #007acc;
+    background-color:#007bff;
 }
 
+#contact-us {
+    background-color: whitesmoke;
+    padding: 20px;
+}
 
+.contact-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
 
+h2 {
+    color: #0099ff;
+    text-align: center;
+    margin-bottom: 20px;
+}
 
-.form-group,
-.form-group-full {
-    flex: 1;
+.contact-form {
     display: flex;
     flex-direction: column;
-    position: relative;
-    margin-right: 10px;
 }
 
-.form-group-full {
-    margin-right: 0;
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    flex: 1;
+    margin-right: 10px;
 }
 
 .form-group:last-child {
     margin-right: 0;
 }
 
+.form-group-full {
+    margin-bottom: 15px;
+}
+
 label {
-    font-size: 14px;
-    color: #666;
+    font-weight: bold;
+    color: #0099ff;
     margin-bottom: 5px;
 }
 
@@ -434,42 +433,58 @@ input[type="text"],
 input[type="email"],
 textarea {
     border: none;
-    border-bottom: 1px solid #000;
-    padding: 8px 0;
+    border-bottom: 2px solid lightgray;
+    padding: 5px;
     font-size: 16px;
     outline: none;
-    background-color: transparent;
     width: 100%;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-bottom-color: #0099ff;
 }
 
 textarea {
-    border-bottom: 1px solid #000;
+    border-bottom: 2px solid lightgray;
     resize: none;
 }
 
-input:focus,
-textarea:focus {
-    border-color: #00aaff;
-}
-
-.form-group-submit {
-    text-align: center;
-}
-
-button[type="submit"] {
-    padding: 10px 20px;
-    background-color: #00aaff;
+button {
+    background-color: #0099ff;
     color: white;
     border: none;
-    border-radius: 25px;
-    font-size: 16px;
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-left:10px;
+    padding-right: 10px;
+    border-radius:55px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    font-size: 16px;
+    margin-top: 10px;
 }
 
-button[type="submit"]:hover {
-    background-color: #007acc;
+button:hover {
+    background-color: #0099ff;
 }
+
+@media (max-width: 600px) {
+    .form-row {
+        flex-direction: column;
+    }
+    
+    .form-group {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+
+
+
+
 
 /* Footer */
 footer {
