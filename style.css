@@ -28,10 +28,11 @@ body {
 }
 
 
-.logo {
+#logo {
     font-size: 24px;
     font-weight: bold;
-    color: #00aaff;
+    color:#00aaff;
+    z-index: 1000;
 }
 
 .nav-links {
@@ -75,6 +76,9 @@ body {
     padding: 20px;
     position: relative;
     margin: 0;
+    padding:180px;
+    margin-top:40px;
+
   }
   
   .home::before {
@@ -191,21 +195,20 @@ body {
 .course-container {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 50px;;
 }
 
 .course-text {
-    margin-bottom: 20px;
+    padding-bottom: 0;
 }
 
 .course-text h2 {
     font-size: 32px;
     color: #00aaff;
-    margin-bottom: 10px;
 }
 
 .course-text p {
     font-size: 18px;
-    margin-bottom: 20px;
     color: #555;
 }
 
@@ -217,9 +220,8 @@ body {
     background-color: #f4f7f6;
 }
 
-.course-container {
-    margin-bottom: 30px;
-}
+ /* .course-container {
+}  */
 
 .course-text h2 {
     font-size: 32px;
@@ -361,24 +363,34 @@ h1 {
     word-wrap: break-word;
 }
 
+
+
+
+
 .join-button {
-    background-color: #007bff; 
-    color: white; 
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px; 
-    border-radius: 25px; 
-    cursor: pointer; 
-    transition: background-color 0.3s ease;
-    text-align: center; 
-    max-width: 150px; 
-    width: 100%; 
-    margin: 0 auto; 
+    list-style: none;
+    color:white;
+    margin: 10px;
+    margin-bottom: 60px;
+    /* background-color: red; */
 }
 
-.join-button:hover {
-    background-color: #0056b3;
+.join-button a {
+    text-decoration: none;
+    color:white;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    background-color:#0099ff;
+    padding: 10px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+
 }
+.join-button a:hover{
+    background-color: #007acc;
+}
+
+
 
 
 .form-group,
