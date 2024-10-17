@@ -66,7 +66,7 @@ body {
 
 /* Home Section with Background Image */
 .home {
-    height: 80vh;
+    height: 100vh;
     background: url('/images/imagebg.png') no-repeat center center/cover;
     display: flex;
     justify-content: center;
@@ -92,23 +92,26 @@ body {
     z-index: 1;
   }
   
-  .home-content {
-    max-width: 600px; 
-    margin: 0 auto; 
-}
+
 
 .home-content h2 {
     font-size: 40px;
-    margin-top: 0;
+    margin-left: -560px;
+    color: #fff;
+ 
 
 }
 
 .home-content p {
     font-size: 18px;
-    margin-bottom: 30px;
+    position: relative;
+    max-width: 400px; 
+    margin-left: -500px;
+   
 }
 
 .home-content .btn {
+    position: absolute;
     padding: 15px 30px;
     background-color: #00aaff;
     color: white;
@@ -117,6 +120,8 @@ body {
     font-size: 16px;
     text-decoration: none;
     transition: background-color 0.3s ease;
+    margin-left: -500px;
+    margin-top: 50px;
 }
 
 .home-content .btn:hover {
@@ -344,7 +349,7 @@ h1 {
 }
 
 .description {
-    font-size: 14px;
+    font-size: 18px;
     line-height: 1.5;
     color: #333;
     max-width: 600px;
